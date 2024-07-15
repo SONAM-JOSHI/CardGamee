@@ -23,7 +23,7 @@
             android:contentDescription="@string/img_desc"
             android:src="@drawable/black0"
             android:layout_height="match_parent"/>
-
+//ok
         <ImageView
             android:id="@+id/redCard"
             android:contentDescription="@string/img_desc"
