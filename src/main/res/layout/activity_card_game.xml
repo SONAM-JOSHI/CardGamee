@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/casinobg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/cardLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+
+        <ImageView
+            android:id="@+id/blackCard"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:contentDescription="@string/img_desc"
+            android:src="@drawable/black0"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/redCard"
+            android:contentDescription="@string/img_desc"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:src="@drawable/red0"
+            android:layout_height="match_parent"/>
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/playBtn"
+        android:backgroundTint="@color/amber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/cardLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_msg"
+        />
+
+
+    <TextView
+        android:id="@+id/msgText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        />
+
+</RelativeLayout>
